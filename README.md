@@ -41,6 +41,17 @@ CREATE DATABASE wordpress;
 mkdir -p development/new-site
 cd development/new-site
 curl --output latest.tar.gz https://wordpress.org/latest.tar.gz
-tar zxvf latest.tar.gz --strip-components=1
+tar zxf latest.tar.gz --strip-components=1
+rm latest.tar.gz
 php -S localhost:8000
 ```
+
+Install plugins for development:
+
+* Create Block Theme
+* Debug Bar
+* Health Check & Troubleshooting
+* Performance Lab
+
+
+
